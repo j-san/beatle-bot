@@ -91,20 +91,15 @@ npm test
 Notes
 -----
 
-- rebootBot(bot, program), UI change program, reboot bot
-- Tests
-- Readme, description & screenshot
 - improve materials transformations and consumtion
-- improve bot queuing
+- improve bot queuing in building
 - action for evolve building
 - action for evolve bots
 - improve bot runtime
 - encapsulation
 - edit / show robot data
 - filtering and helpers
-- docs
-- don't render bots outside of map area
-- bot make some smart stuff
+- don't render bots outside of visible map area
 - drag map
 - Combat / life
 - Client / servrer for multiplayer
