@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "lint": "eslint . --ignore-pattern build",
-    "unit-test": "webpack -d && phantomjs ./node_modules/mocha-phantomjs-core/mocha-phantomjs-core.js test/index.html",
+    "build": "webpack -d",
+    "unit-test": "npm run build && phantomjs ./node_modules/mocha-phantomjs-core/mocha-phantomjs-core.js test/index.html",
     "test": "npm outdated && npm run lint && npm run unit-test",
     "babel-compile": "babel js/main.js --watch  --source-maps --out-file bundle.js",
     "dev-server": "webpack-dev-server --port 1337 --colors --progress --inline --devtool cheap-module-source-map"
@@ -38,6 +39,7 @@
     "eslint": "^3.2.2",
     "eslint-plugin-react": "^6.0.0",
     "file-loader": "^0.9.0",
+    "gh-pages": "^0.11.0",
     "mocha": "^3.0.1",
     "phantom": "^2.1.14",
     "style-loader": "^0.13.1",
