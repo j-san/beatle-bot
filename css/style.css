@@ -1,0 +1,89 @@
+
+.main-card, .side-left-card {
+    position: fixed;
+    border: 1px solid #444;
+    box-sizing: border-box;
+    margin: 0;
+}
+.main-card {
+    top: 4px;
+    bottom: 4px;
+    left: 400px;
+    right: 4px;
+}
+.side-left-card {
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    width: 392px;
+    padding: 16px 8px;
+}
+.map {
+    background: #eee;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+.controls {
+    position: absolute;
+
+    left: 10px;
+    top: 10px;
+}
+.controls.controls-scale button {
+    text-align: center;
+    display: block;
+    width: 30px;
+    margin: 5px;
+    font-size: 20px;
+    padding: 5px;
+}
+.controls .octicon {
+    font-size: 24px;
+}
+
+.main-card .card-group {
+    height: 100%;
+}
+.main-card .editor-actions {
+    position: absolute;
+
+    height: 40px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    text-align: right;
+}
+.main-card .ace_editor {
+    position: absolute;
+
+    top: 4px;
+    bottom: 48px;
+    left: 4px;
+    right: 4px;
+}
+
+
+/* Map */
+.guide {
+    stroke: #ccc;
+}
+.bot, .wheel, .building, .gauge-border {
+    fill: transparent;
+    stroke: #444;
+    stroke-width: 1;
+}
+.active rect, .active circle {
+    stroke: red;
+}
+text.active {
+    fill: red;
+}
+.target {
+    height: 12px;
+    width: 12px;
+    margin-left: -6px;
+    margin-top: -6px;
+    text-align: center;
+    font-size: 32px;
+}
