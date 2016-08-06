@@ -35,40 +35,40 @@ Bots
 A mouving robot that can do some tasks.
 
 
-### Attributes
+### Properties
 
-x, y
-    The position of bot in map
+#### x, y
+The position of bot in map
 
-position
-    An object containing x and y as attribute
+#### position
+An object containing x and y as property
 
 
 ### Actions
 
-goto(destination)
-    Move to destination
+#### goto(destination)
+Move to destination
 
-bootBuilding()
-    Mark the bot location as a construction site for a new building
+#### bootBuilding()
+Mark the bot location as a construction site for a new building
 
-loadMaterial(building)
-    Take some material in the given building and put it in the cargo
+#### loadMaterial(building)
+Take some material in the given building and put it in the cargo
 
-unloadMaterial(building)
-    Put the material in the cargo in the given building
+#### unloadMaterial(building)
+Put the material in the cargo in the given building
 
-smelt(building)
-    Transform mineral in metal
+#### smelt(building)
+Transform mineral in metal
 
-buildBot(building)
-    Build a new bot, it will remove 100 metal from given building
+#### buildBot(building)
+Build a new bot, it will remove 100 metal from given building
 
 
 ### functions
 
-reboot([program])
-    Reboot program from the beginin, given program could replace current program.
+#### reboot([program])
+Reboot program from the beginin, given program could replace current program.
 
 
 Buildings
@@ -80,6 +80,13 @@ A place with engins that allow bots to works on specific tasks.
 
 Development
 ===========
+
+Run dev server
+--------—-----
+
+```
+npm run dev-server
+```
 
 test
 ----
