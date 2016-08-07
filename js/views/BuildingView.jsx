@@ -1,7 +1,6 @@
 
 import React from 'react';
 
-import Gague from './Gauge.jsx';
 import {Deposit, Factory} from '../models/Building.js';
 
 

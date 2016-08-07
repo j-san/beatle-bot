@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -ex
 
 mkdir -p dist
 rm -rf dist/*

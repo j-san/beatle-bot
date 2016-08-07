@@ -8,7 +8,7 @@ ______              _    _       ______         _
 \____/  \___| \___| \__||_| \___|\____/  \___/  \__|
 ```
 
-Code your bots AI and lets them build your game.
+Code your bots and let them build your game.
 
 
 Documentation

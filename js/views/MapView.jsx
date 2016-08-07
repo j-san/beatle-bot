@@ -1,5 +1,4 @@
 
-import _ from 'underscore';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -10,7 +9,7 @@ export default class MapView extends React.Component {
     componentDidMount() {
         this.computeSize();
     }
-    componentWillReceiveProps(props) {
+    componentWillReceiveProps() {
         // after scale
         this.computeSize();
     }

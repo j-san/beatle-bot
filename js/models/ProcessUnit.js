@@ -14,9 +14,10 @@ ______  _____   ___  ______ ___  ___ _____
 | |\\ \\ | |___ | | | || |/ / | |  | || |___ 
 \\_| \\_|\\____/ \\_| |_/|___/  \\_|  |_/\\____/ 
 
-\`yield\` bot actions and it will do the job for you.
+\`yield\` bot actions and it will do the job for you. 
+Or type \`processUnit\` in your Browser console for instant debug.
 
-More info [here].
+More documantation [https://github.com/j-san/beetle-bot].
 */
 
 export default function* main(bot, processUnit) {

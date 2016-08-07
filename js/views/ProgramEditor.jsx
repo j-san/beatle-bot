@@ -2,6 +2,7 @@
 import React from 'react';
 
 import CodeEditor from './CodeEditor.jsx';
+import processUnit from '../models/ProcessUnit.js';
 
 
 var CodeStore = {
@@ -58,7 +59,7 @@ var CodeStore = {
 
         localStorage.setItem('saved-' + name, content);
     }
-}
+};
 
 export default class ProgramEditor extends React.Component {
     constructor() {
@@ -82,7 +83,7 @@ export default class ProgramEditor extends React.Component {
             <div className="card">
                 <CodeEditor value={this.state.source || ''} onChange={this.setCode.bind(this)} />
                 <div className="editor-actions">
-                    <button className="btn btn-secondary" onClick={(evt)=> {evt.preventDefault(); this.setState({selectFile: !this.state.selectFile})}}>Save / Load</button>
+                    <button className="btn btn-secondary" onClick={(evt)=> {evt.preventDefault(); this.setState({selectFile: !this.state.selectFile});}}>Save / Load</button>
                     {' '}
                     <button className="btn btn-primary">Deploy</button>
                 </div>

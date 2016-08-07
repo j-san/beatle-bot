@@ -1,10 +1,5 @@
 
-import _ from 'underscore';
 import React from 'react';
-import ace from 'brace';
-import 'brace/mode/javascript';
-import 'brace/theme/monokai';
-import ReactDOM from 'react-dom';
 
 import Bot from '../models/Bot.js';
 import Building, {Deposit, Factory} from '../models/Building.js';
@@ -13,7 +8,7 @@ import processUnit from '../models/ProcessUnit.js';
 import MapView from './MapView.jsx';
 import BotDetail from './BotDetail.jsx';
 import BuildingDetail from './BuildingDetail.jsx';
-import ProgramEditor from './ProgramEditor.jsx'
+import ProgramEditor from './ProgramEditor.jsx';
 
 
 export default class AppView extends React.Component {
@@ -35,7 +30,7 @@ export default class AppView extends React.Component {
             var bot = new Bot();
 
             processUnit.add(bot);
-        }
+        };
 
         var botFactory = new Factory({x: 0, y: 0});
         var deposit = new Deposit({
@@ -67,8 +62,8 @@ export default class AppView extends React.Component {
             <aside className="side-left-card card">
                 <div className="text-xs-center">
                     <div className="btn-group">
-                        <button className={`btn btn-primary ${this.state.mainView === 'map' ? 'active' : ''}`} onClick={this.setMainView.bind(this, "map")}>Bots</button>
-                        <button className={`btn btn-primary ${this.state.mainView === 'code' ? 'active' : ''}`} onClick={this.setMainView.bind(this, "code")}>Program</button>
+                        <button className={`btn btn-primary ${this.state.mainView === 'map' ? 'active' : ''}`} onClick={this.setMainView.bind(this, 'map')}>Bots</button>
+                        <button className={`btn btn-primary ${this.state.mainView === 'code' ? 'active' : ''}`} onClick={this.setMainView.bind(this, 'code')}>Program</button>
                     </div>
                 </div>
                 {this.state.selected && this.state.selected instanceof Bot &&
@@ -93,7 +88,7 @@ export default class AppView extends React.Component {
                         <span className="fa fa-pause"></span>
                     }</button>
                 </div>
-                <MapView bots={processUnit.bots} buildings={processUnit.buildings} pause={this.state.pause} scale={this.state.scale} selected={this.state.selected} onSelect={(selected)=> { this.setState({selected: selected}) }} ref="map" />
+                <MapView bots={processUnit.bots} buildings={processUnit.buildings} pause={this.state.pause} scale={this.state.scale} selected={this.state.selected} onSelect={(selected)=> this.setState({selected: selected})} ref="map" />
             </div>
             }
             {this.state.mainView == 'code' &&
@@ -114,9 +109,9 @@ export default class AppView extends React.Component {
     }
     scaleView(zoom) {
         if (zoom) {
-            this.setState({scale: this.state.scale * 1.5})
+            this.setState({scale: this.state.scale * 1.5});
         } else {
-            this.setState({scale: this.state.scale / 1.5})
+            this.setState({scale: this.state.scale / 1.5});
         }
     }
     setMainView(view) {
